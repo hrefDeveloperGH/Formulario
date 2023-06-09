@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgb(64,69,69), rgb(18,18,18));
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffff;
+    margin: 15px;
+    border-radius: 14px;
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+.header {
+    background: rgb(64, 69, 69);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 1px 1em 1px;
+    color: #ffff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    background-image: linear-gradient(rgb(64, 69, 69), rgb(46, 46, 46));
+    color: #ffff;
+}
+
+.armazem {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.armazem label {
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 0px;
+}
+
+.armazem input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    width: 100%;
+    border-color: rgb(20, 20, 20);
+    border-radius: 8px;
+    background-color: #cfcfcf;
+}
+
+.armazem a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden; 
+}
+
+.armazem.error input {
+    border-color: #ff3b25;
+}
+.armazem.error a {
+    color: #ff3b25;
+    visibility: visible;
+}
+
+
+#chucro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button {
+    padding: 10px 30px 10px 30px;
+    margin: 15px;
+    cursor: pointer;
+}
